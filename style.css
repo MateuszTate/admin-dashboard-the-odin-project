@@ -445,3 +445,60 @@ html, body{
     font-weight: 300;
     color: rgb(55, 55, 55)
 }
+
+@media only screen and (max-width: 1400px) {
+    .trending > .trenBox{
+    padding: 5%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .left > .text > .greet {
+        font-weight: 500;
+        font-size: 0.9rem; 
+    }
+    
+    .left > .text > .greet-name {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .button-bar > .right{
+        gap: 10px;
+    }
+
+    .search-bar > .right > .admin-name {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .search-bar img {
+        height: 25px;
+    }
+
+    .trending > .trenBox{
+        
+        font-size: 0.8rem;
+    }
+
+    .trending > .trenBox img{
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .search-bar > .right > .admin-name {
+        text-align: center;
+    }
+    
+    .search-bar > div {
+        gap: 5px;
+    }
+
+    .button-bar img {
+        height: 60px;
+    }
+}
+
+.button-bar > .right > button:hover {
+    background-color: rgba(3, 105, 161, 0.8);
+}
