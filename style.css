@@ -20,6 +20,9 @@ html, body{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
+    -webkit-box-shadow: 0px 14px 8px -16px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 14px 8px -16px rgba(0, 0, 0, 1);
+    box-shadow: 0px 14px 8px -16px rgba(0, 0, 0, 1);
 }
 
 .sidebar {
@@ -63,7 +66,7 @@ html, body{
 .search-bar >.left > input {
     height: 30px;
     width: 80%;
-    background-color: rgba(3, 105, 161, 0.2);
+    background-color: rgba(3, 105, 161, 0.1);
     border: none;
     border-radius: 25px;
     font-weight: 500;
@@ -248,4 +251,197 @@ html, body{
     .sidebar {
         padding: 0;
     }
+}
+
+
+
+.main-content {
+    background-color: rgba(3, 105, 161, 0.1);
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+}
+
+.yourprojects {
+    /* background-color: red; */
+    grid-column: 1/2;
+    grid-row: 1/3;
+    
+}
+
+.layoutSecond {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90%;
+}
+
+.yourprojects > p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-left: 1.5%;
+}
+
+.project {
+    box-sizing: border-box;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border-left: 10px solid rgba(3, 105, 161, 1);
+    border-radius: 10px;
+    margin: 3%;
+    -webkit-box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+}
+
+#firstPro, #secondPro {
+    margin-top: 0;
+}
+
+#firstPro > .iconsProject,
+#secondPro > .iconsProject {
+    padding-top: 20px;
+}
+
+.announc {
+    /* background-color: blue; */
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.trending {
+    /* background-color: green; */
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.project {
+    display: grid;
+
+}
+
+.nextIcon {
+    width: 24px;
+}
+
+.iconsProject {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 20px 10px 0;
+    gap: 20px;
+}
+
+.textProject {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(55, 55, 55)
+}
+
+.textProject > p {
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .iconsProject {
+        justify-content: center;
+    }
+}
+
+.announc > p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-left: 3%;
+    /* border: 1px solid red; */
+    padding: 0;
+}
+
+.announc {
+    /* display: grid; */
+    /* border: 1px solid red; */
+}
+
+.announc > .mainBox {
+    background-color: white;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    padding: 10px 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3%;
+    -webkit-box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+}
+
+.mainBox > .info {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgb(55, 55, 55)
+}
+
+.mainBox > .info> p {
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.info > div {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.trenBox img {
+    height: 48px;
+}
+
+.trenBox > .trenppl{
+    display: flex;
+    margin: -4.2% 0 -4% 0;
+    /* border: 1px solid red; */
+    gap: 5px;
+}
+
+.trenppl > .nickname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending > p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-left: 3%;
+    /* border: 1px solid red; */
+    padding: 0;
+}
+
+.trending > .trenBox{
+    background-color: white;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    padding: 10px 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3%;
+    -webkit-box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
+}
+
+.firstNick {
+    font-weight: 500;
+}
+
+.secondNick {
+    font-weight: 300;
+    color: rgb(55, 55, 55)
 }
