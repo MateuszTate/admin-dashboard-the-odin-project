@@ -1,11 +1,12 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #layout {
@@ -31,9 +32,6 @@ html, body{
     grid-row: 1 / 3;
 }
 
-
-
-
 .main-content {
     background-color: blue;
     grid-column: 2 / 3;
@@ -47,9 +45,7 @@ html, body{
     gap: 24px;
 }
 
-
-
-.search-bar > div{
+.search-bar > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +59,7 @@ html, body{
     margin-left: 7%;
 }
 
-.search-bar >.left > input {
+.search-bar > .left > input {
     height: 30px;
     width: 80%;
     background-color: rgba(3, 105, 161, 0.1);
@@ -73,11 +69,11 @@ html, body{
     font-size: 1rem;
 }
 
-.search-bar >.right > img {
+.search-bar > .right > img {
     width: 40px;
 }
 
-.search-bar > .left >img {
+.search-bar > .left > img {
     width: 40px;
 }
 
@@ -120,7 +116,7 @@ html, body{
 
 .left > .text > .greet {
     font-weight: 500;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
 }
 
 .left > .text > .greet-name {
@@ -133,7 +129,7 @@ html, body{
     justify-content: space-around;
 }
 
-.button-bar > .right > button { 
+.button-bar > .right > button {
     border: none;
     background-color: #0369a1;
     color: white;
@@ -144,11 +140,11 @@ html, body{
     border-radius: 25px;
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 600px){
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
     .sidebar {
         min-width: 200px;
     }
-    
+
     .header button {
         min-width: 70px;
     }
@@ -176,15 +172,13 @@ html, body{
     }
 }
 
-
-
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 8fr;
     background-color: #0369a1;
     font-weight: 600;
 }
-.dashboard{
+.dashboard {
     font-size: 1.7rem;
     display: flex;
     flex-wrap: wrap;
@@ -192,26 +186,28 @@ html, body{
 }
 
 .dashboard > * {
-    margin-right: 5px
+    margin-right: 5px;
 }
 .icons {
     font-size: 1.1rem;
 }
 
-.sidebar .dashboard > img{
+.sidebar .dashboard > img {
     height: 60px;
-    filter: invert(100%) sepia(0%) saturate(969%) hue-rotate(179deg) brightness(110%) contrast(101%);
+    filter: invert(100%) sepia(0%) saturate(969%) hue-rotate(179deg)
+        brightness(110%) contrast(101%);
 }
 
 .sidebar .icon {
     height: 32px;
     color: rgb(255, 255, 255);
-    filter: invert(100%) sepia(0%) saturate(969%) hue-rotate(179deg) brightness(110%) contrast(101%);
+    filter: invert(100%) sepia(0%) saturate(969%) hue-rotate(179deg)
+        brightness(110%) contrast(101%);
 }
 
 .sidebar > .dashboard,
 .sidebar > .icons > p,
-.sidebar > .icons-second > p{
+.sidebar > .icons-second > p {
     color: rgb(255, 255, 255);
     display: flex;
     /* flex-direction: column; */
@@ -220,14 +216,14 @@ html, body{
 }
 
 .sidebar > .icons > p > img,
-.sidebar > .icons-second > p > img{
+.sidebar > .icons-second > p > img {
     margin-right: 20px;
     margin-left: 20px;
 }
 
 .icons-second {
     font-size: 1.1rem;
-    grid-row: 4/5
+    grid-row: 4/5;
 }
 
 .sidebar {
@@ -238,7 +234,7 @@ html, body{
 @media only screen and (max-width: 599px) {
     .sidebar > .dashboard,
     .sidebar > .icons > p,
-    .sidebar > .icons-second > p{
+    .sidebar > .icons-second > p {
         flex-direction: column;
     }
 }
@@ -253,8 +249,6 @@ html, body{
     }
 }
 
-
-
 .main-content {
     background-color: rgba(3, 105, 161, 0.1);
     grid-template-columns: 3fr 1fr;
@@ -266,7 +260,6 @@ html, body{
     /* background-color: red; */
     grid-column: 1/2;
     grid-row: 1/3;
-    
 }
 
 .layoutSecond {
@@ -295,7 +288,8 @@ html, body{
     box-shadow: 8px 8px 9px -12px rgba(0, 0, 0, 1);
 }
 
-#firstPro, #secondPro {
+#firstPro,
+#secondPro {
     margin-top: 0;
 }
 
@@ -318,7 +312,6 @@ html, body{
 
 .project {
     display: grid;
-
 }
 
 .nextIcon {
@@ -336,7 +329,7 @@ html, body{
 .textProject {
     font-size: 1rem;
     font-weight: 300;
-    color: rgb(55, 55, 55)
+    color: rgb(55, 55, 55);
 }
 
 .textProject > p {
@@ -345,7 +338,6 @@ html, body{
     font-weight: 700;
     font-size: 1.2rem;
 }
-
 
 @media only screen and (max-width: 900px) {
     .iconsProject {
@@ -360,11 +352,6 @@ html, body{
     margin-left: 3%;
     /* border: 1px solid red; */
     padding: 0;
-}
-
-.announc {
-    /* display: grid; */
-    /* border: 1px solid red; */
 }
 
 .announc > .mainBox {
@@ -383,10 +370,10 @@ html, body{
 .mainBox > .info {
     font-size: 0.8rem;
     font-weight: 300;
-    color: rgb(55, 55, 55)
+    color: rgb(55, 55, 55);
 }
 
-.mainBox > .info> p {
+.mainBox > .info > p {
     color: black;
     margin-bottom: 5px;
     font-weight: 700;
@@ -402,7 +389,7 @@ html, body{
     height: 48px;
 }
 
-.trenBox > .trenppl{
+.trenBox > .trenppl {
     display: flex;
     margin: -4.2% 0 -4% 0;
     /* border: 1px solid red; */
@@ -424,7 +411,7 @@ html, body{
     padding: 0;
 }
 
-.trending > .trenBox{
+.trending > .trenBox {
     background-color: white;
     /* border: 2px solid red; */
     box-sizing: border-box;
@@ -443,26 +430,26 @@ html, body{
 
 .secondNick {
     font-weight: 300;
-    color: rgb(55, 55, 55)
+    color: rgb(55, 55, 55);
 }
 
 @media only screen and (max-width: 1400px) {
-    .trending > .trenBox{
-    padding: 5%;
+    .trending > .trenBox {
+        padding: 5%;
     }
 }
 @media only screen and (max-width: 1000px) {
     .left > .text > .greet {
         font-weight: 500;
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
-    
+
     .left > .text > .greet-name {
         font-weight: 600;
         font-size: 1.5rem;
     }
 
-    .button-bar > .right{
+    .button-bar > .right {
         gap: 10px;
     }
 
@@ -475,12 +462,11 @@ html, body{
         height: 25px;
     }
 
-    .trending > .trenBox{
-        
+    .trending > .trenBox {
         font-size: 0.8rem;
     }
 
-    .trending > .trenBox img{
+    .trending > .trenBox img {
         width: 30px;
     }
 }
@@ -489,7 +475,7 @@ html, body{
     .search-bar > .right > .admin-name {
         text-align: center;
     }
-    
+
     .search-bar > div {
         gap: 5px;
     }
